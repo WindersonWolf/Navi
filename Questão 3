@@ -1,0 +1,28 @@
+from operator import itemgetter
+aluno = dict()
+ranking = dict()
+n1 = str(input('Nome do aluno 1: '))
+
+aluno[n1] = float(input('Media do Aluno 1: '))
+
+n2 = str(input('Nome do aluno 2: '))
+
+aluno[n2] = float(input('Media do Aluno 1: '))
+
+n3 = str(input('Nome do aluno 3: '))
+
+aluno[n3] = float(input('Media do Aluno 3: '))
+
+n4 = str(input('Nome do aluno 4: '))
+
+aluno[n4] = float(input('Media do Aluno 4: '))
+
+n5 = str(input('Nome do aluno 5: '))
+
+aluno[n5] = float(input('Media do Aluno 5: '))
+
+ranking = sorted(aluno.items(), key=itemgetter(1), reverse=True)
+
+
+print("O aluno com a maior nota e sua respectiva nota é")
+print(ranking[0])
