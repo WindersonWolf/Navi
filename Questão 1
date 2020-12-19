@@ -1,0 +1,9 @@
+num = 0
+resp = 0
+condicao = 0
+
+while (num < 5000000):
+    if num%2==0 and num%37==0 and num%49==0: 
+        resp +=1
+    num = num + 1
+else: print(resp)
