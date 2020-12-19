@@ -1,0 +1,23 @@
+from math import factorial
+from math import log
+vetor = [0]*10
+cont = 0
+media = 0
+
+while(cont <= 9):
+    if cont%2 == 0:
+        vetor[cont] = 3+7*factorial(cont)
+    else:
+        vetor[cont] = 2+4*log(cont)
+    cont = cont + 1
+
+maior = (max(int(vetor) for vetor in vetor))
+
+for i, v in enumerate (vetor):
+    if v == maior:
+        print("O maior elemento desse vetor esta na posicao ")
+        print(i)
+
+
+media = sum(vetor)/len(vetor)
+print('A media dos valores e {:.2f}'.format(media))
